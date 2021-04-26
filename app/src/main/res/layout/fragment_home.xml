@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70sp"
+        android:padding="12dp"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <TextView
+                style="@style/TextDefault"
+                android:text="ID" />
+
+            <TextView
+                android:id="@+id/text_view_id"
+                style="@style/TextDefault"
+                tools:text="1" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/TextDefault"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/text_view_name"
+                style="@style/TextDefault"
+                tools:text="Belal Khan" />
+
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/TextDefault"
+                android:text="Email" />
+
+            <TextView
+                android:id="@+id/text_view_Email"
+                style="@style/TextDefault"
+                tools:text="probelalkhan@gmail.com" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="196dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_marginLeft="10sp"
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="USD"
+            android:textSize="30sp"
+            android:backgroundTint="@color/colorTextWhite"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/button_convertir"
+        style="@style/ButtonPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20sp"
+        android:text="Convertir" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>
